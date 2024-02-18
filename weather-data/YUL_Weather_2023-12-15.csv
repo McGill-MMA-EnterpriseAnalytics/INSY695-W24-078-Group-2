@@ -1,0 +1,25 @@
+Timestamp,Temperature,Feels Like,Pressure,Humidity,Wind Speed,Wind Degree,Clouds,Weather Main,Weather Description,Rain 1h,Snow 1h
+2023-12-15 00:00:00,-0.08,-2.84,1024,73,2.24,248,82,Clouds,broken clouds,0,0
+2023-12-15 01:00:00,0.04,-3.16,1024,72,2.68,180,29,Clouds,scattered clouds,0,0
+2023-12-15 02:00:00,-0.09,-3.31,1024,74,2.68,225,28,Clouds,scattered clouds,0,0
+2023-12-15 03:00:00,0.44,-2.68,1023,75,2.68,248,29,Clouds,scattered clouds,0,0
+2023-12-15 04:00:00,0.12,-3.47,1022,77,3.13,225,30,Clouds,scattered clouds,0,0
+2023-12-15 05:00:00,0.35,-2.79,1021,79,2.68,225,43,Clouds,scattered clouds,0,0
+2023-12-15 06:00:00,0.92,-2.5,1021,80,3.13,225,52,Clouds,broken clouds,0,0
+2023-12-15 07:00:00,1.54,-3.31,1021,79,5.62,232,72,Clouds,broken clouds,0,0
+2023-12-15 08:00:00,2.04,-1.49,1021,79,3.58,270,45,Clouds,scattered clouds,0,0
+2023-12-15 09:00:00,2.05,-1.48,1020,80,3.58,270,33,Clouds,scattered clouds,0,0
+2023-12-15 10:00:00,2.07,-1.12,1020,82,3.13,225,28,Clouds,scattered clouds,0,0
+2023-12-15 11:00:00,2.21,-0.57,1020,82,2.68,248,33,Clouds,scattered clouds,0,0
+2023-12-15 12:00:00,2.45,-0.99,1020,83,3.58,248,52,Clouds,broken clouds,0,0
+2023-12-15 13:00:00,2.61,-0.8,1021,83,3.58,248,23,Clouds,few clouds,0,0
+2023-12-15 14:00:00,3.32,0.75,1022,82,2.68,248,27,Clouds,scattered clouds,0,0
+2023-12-15 15:00:00,4.71,1.76,1022,81,3.58,248,30,Clouds,scattered clouds,0,0
+2023-12-15 16:00:00,5.58,2.56,1022,80,4.02,248,34,Clouds,scattered clouds,0,0
+2023-12-15 17:00:00,5.6,3.84,1021,77,2.24,270,37,Clouds,scattered clouds,0,0
+2023-12-15 18:00:00,6.53,2.68,1020,77,6.41,254,29,Clouds,scattered clouds,0,0
+2023-12-15 19:00:00,6.6,4.34,1021,74,3.13,248,21,Clouds,few clouds,0,0
+2023-12-15 20:00:00,6.0,2.59,1022,73,5.0,259,37,Clouds,scattered clouds,0,0
+2023-12-15 21:00:00,5.4,2.0,1022,74,4.67,254,49,Clouds,scattered clouds,0,0
+2023-12-15 22:00:00,5.24,5.24,1022,76,0.45,270,43,Clouds,scattered clouds,0,0
+2023-12-15 23:00:00,3.93,0.29,1023,72,4.44,256,41,Clouds,scattered clouds,0,0
