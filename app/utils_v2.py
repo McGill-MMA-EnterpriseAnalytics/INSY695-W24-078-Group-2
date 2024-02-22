@@ -21,6 +21,9 @@ from sklearn.svm import SVR
 import xgboost as xgb
 import optuna
 import pipeline
+import mlflow
+from mlflow.tracking import MlflowClient
+from math import sqrt
 
 
 # Set pandas display options
@@ -357,3 +360,56 @@ def plot_delay_frequency(fl, airline, destination):
     ax.set_xlabel('Departure Delay (min)')
     ax.set_ylabel('Frequency')
     st.pyplot(fig)
+
+
+#--------------------------------------------------------------------------------------
+
+# Function for MLFlow tracking
+def track_model_performance(experiment_name, model_name, model, X_train, y_train, X_test, y_test):
+    """
+    Track the model performance using MLFlow.
+
+    Parameters:
+    - experiment_name: str, the name of the MLFlow experiment.
+    - model_name: str, the name of the model to track.
+    - model: the model instance to track.
+    - X_train: training data features.
+    - y_train: training data target.
+    - X_test: test data features.
+    - y_test: test data target.
+    """
+    # Set the MLFlow experiment
+    mlflow.set_experiment(experiment_name)
+
+    # Start MLFlow run
+    with mlflow.start_run():
+        # Log model name
+        mlflow.log_param("model_name", model_name)
+
+        # Fit the model
+        model.fit(X_train, y_train)
+
+        # Make predictions
+        predictions = model.predict(X_test)
+
+        # Calculate metrics
+        rmse = sqrt(mean_squared_error(y_test, predictions))
+        # r2 = r2_score(y_test, predictions)
+
+        # Log metrics
+        mlflow.log_metric("rmse", rmse)
+        # mlflow.log_metric("r2", r2)
+
+        # Log model
+        mlflow.sklearn.log_model(model, "model")
+
+        # Print out metrics
+        print(f"Model: {model_name}")
+        print(f"  RMSE: {rmse}")
+        # print(f"  R2: {r2}")
+
+        # Set tags
+        mlflow.set_tag("developer", "Team 2")
+
+        # End MLFlow run
+        mlflow.end_run()

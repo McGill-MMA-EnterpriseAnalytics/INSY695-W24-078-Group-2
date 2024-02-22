@@ -31,8 +31,6 @@ models = {
 # Test and validate different models
 results = {}
 
-
-
 for name, model in models.items():
     mse, r2 = evaluate_model(model, X_train, y_train, X_test, y_test)
     results[name] = {'RMSE': sqrt(mse), 'R2': r2}
@@ -42,5 +40,3 @@ for name, model in models.items():
 best_model = RandomForestRegressor(n_estimators=100, random_state=42)
 best_model.fit(X_train, y_train)
 joblib.dump(best_model, 'best_model.pkl')
-
-
