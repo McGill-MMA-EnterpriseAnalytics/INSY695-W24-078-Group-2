@@ -15,7 +15,7 @@ Our demo product, **FlyOnTime**, is set to revolutionize the industry by introdu
 - **Data Integration**
 
 ### 🧹 EDA & Data Pre-processing
-- Conducted comprehensive EDA utilizing visualization tools (Matplotlib, Seaborn) and statistical analysis to uncover patterns, correlations, and outliers in the flight and weather data, providing insights into factors affecting flight schedules and weather conditions.
+- Conducted comprehensive EDA utilizing visualization tools (Matplotlib, Seaborn), statistical analysis techniques, and automated profiling tools (YDataProfiling, Sweetviz, D-Tale) to uncover patterns, correlations, and outliers in the flight and weather data, providing insights into factors affecting flight schedules and weather conditions.
 - Implemented preprocessing pipeline using pandas, numpy, and sklearn (including train_test_split, OrdinalEncoder, StandardScaler, KNNImputer, SimpleImputer, and Pipeline) to clean, impute missing values, encode categorical variables, and standardize features, ensuring the dataset is optimized for accurate analysis and modeling.
 
 ### ⚙️ Modelling
