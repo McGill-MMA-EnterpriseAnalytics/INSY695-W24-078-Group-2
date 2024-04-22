@@ -1,0 +1,11 @@
+{
+    "fields": [
+      {
+        "name": "flight_number",
+        "type": "string"
+      }
+    ],
+    "name": "FlightKey",
+    "namespace": "YULdepartures",
+    "type": "record"
+  }
