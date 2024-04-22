@@ -1,0 +1,55 @@
+{
+    "type": "record",
+    "name": "departureRecord",
+    "namespace": "YULdepartures",
+    "fields": [
+        {
+            "name": "flight_status",
+            "type": "string",
+            "default": "landed",
+            "doc": "Flight Status, such as landed, scheduled, active etc."
+        },
+        {
+            "name": "departure_airport",
+            "type": "string",
+            "default": "YUL",
+            "doc": "IATA Code of the Departure Airport. Expected to be YUL."
+        },
+        {
+            "name": "departure_gate",
+            "type": "string",
+            "doc": "Departure Gate for a given flight departure record."
+        },
+        {
+            "name": "arrival_airport",
+            "type": "string",
+            "doc": "IATA Code of the Arrival Airport."
+        },
+        {
+            "name": "scheduled_departure",
+            "type": "string",
+            "doc": "Scheduled Departure timestamp for a given flight departure record."
+        },
+        {
+            "name": "actual_departure",
+            "type": "string",
+            "doc": "Actual Departure timestamp for a given flight departure record."
+        },
+        {
+            "name": "delay_minutes",
+            "type": "float",
+            "default": 0,
+            "doc": "Departure Delay, measured in minutes."
+        },
+        {
+            "name": "airline_name",
+            "type": "string",
+            "doc": "Name of the Airline"
+        },
+        {
+            "name": "flight_number",
+            "type": "string",
+            "doc": "IATA Convention Flight Number for a given flight departure record."
+        }
+    ]
+}
