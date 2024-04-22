@@ -1,1 +1,4 @@
 ./Kafka/enterprise-project/
+mlruns/ 
+causal-inference/trained_models.pkl
+causal-inference/optuna_best_models.pkl
