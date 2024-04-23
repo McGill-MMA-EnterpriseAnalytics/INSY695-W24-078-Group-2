@@ -1,0 +1,25 @@
+Timestamp,Temperature,Feels Like,Pressure,Humidity,Wind Speed,Wind Degree,Clouds,Weather Main,Weather Description,Rain 1h,Snow 1h
+2024-03-29 00:00:00,5.53,4.17,1013,63,1.82,293,100,Clouds,overcast clouds,0,0
+2024-03-29 01:00:00,4.79,3.46,1013,66,1.7,275,100,Clouds,overcast clouds,0,0
+2024-03-29 02:00:00,4.65,2.72,1013,66,2.24,248,100,Clouds,overcast clouds,0,0
+2024-03-29 03:00:00,4.37,3.45,1013,67,1.34,270,100,Clouds,overcast clouds,0,0
+2024-03-29 04:00:00,4.1,2.55,1013,68,1.79,248,100,Clouds,overcast clouds,0,0
+2024-03-29 05:00:00,3.2,1.52,1013,72,1.79,248,100,Clouds,overcast clouds,0,0
+2024-03-29 06:00:00,2.5,2.5,1012,74,0.89,225,98,Clouds,overcast clouds,0,0
+2024-03-29 07:00:00,1.77,1.77,1012,77,0.89,248,100,Clouds,overcast clouds,0,0
+2024-03-29 08:00:00,1.2,1.2,1010,78,0.45,248,100,Clouds,overcast clouds,0,0
+2024-03-29 09:00:00,0.55,0.55,1010,81,0.89,248,100,Clouds,overcast clouds,0,0
+2024-03-29 10:00:00,0.05,-1.43,1010,82,1.34,248,100,Clouds,overcast clouds,0,0
+2024-03-29 11:00:00,-0.37,-3.43,1010,83,2.47,288,100,Clouds,overcast clouds,0,0
+2024-03-29 12:00:00,0.75,0.75,1010,79,0.89,293,100,Clouds,overcast clouds,0,0
+2024-03-29 13:00:00,2.6,2.6,1009,69,0.45,293,96,Clouds,overcast clouds,0,0
+2024-03-29 14:00:00,4.83,3.97,1009,59,1.34,248,88,Clouds,overcast clouds,0,0
+2024-03-29 15:00:00,5.79,4.06,1008,55,2.24,225,92,Clouds,overcast clouds,0,0
+2024-03-29 16:00:00,7.03,4.34,1007,52,4.02,270,94,Clouds,overcast clouds,0,0
+2024-03-29 17:00:00,7.45,3.29,1007,49,8.23,240,40,Clouds,scattered clouds,0,0
+2024-03-29 18:00:00,7.74,3.97,1005,45,7.2,260,40,Clouds,scattered clouds,0,0
+2024-03-29 19:00:00,8.79,6.73,1005,45,3.58,293,88,Clouds,overcast clouds,0,0
+2024-03-29 20:00:00,9.29,7.34,1004,42,3.58,270,100,Clouds,overcast clouds,0,0
+2024-03-29 21:00:00,9.0,6.76,1004,43,4.02,293,100,Clouds,overcast clouds,0,0
+2024-03-29 22:00:00,7.25,6.19,1005,47,1.79,293,99,Clouds,overcast clouds,0,0
+2024-03-29 23:00:00,4.99,2.1,1005,51,3.58,293,97,Clouds,overcast clouds,0,0
