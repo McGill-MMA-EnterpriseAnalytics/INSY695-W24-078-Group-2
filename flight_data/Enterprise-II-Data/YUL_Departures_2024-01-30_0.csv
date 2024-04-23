@@ -1,0 +1,3 @@
+Flight Status,Departure Airport,Departure Gate,Arrival IATA Code,Scheduled Departure,Actual Departure,Delay (in Minutes),Airline Name,Flight Number
+landed,YUL,A58,DOH,2024-01-30T20:50:00+00:00,2024-01-30T21:45:00+00:00,55,Qatar Airways,QR764
+landed,YUL,A64,DEL,2024-01-30T20:30:00+00:00,2024-01-30T21:19:00+00:00,49,Air Canada,AC50
