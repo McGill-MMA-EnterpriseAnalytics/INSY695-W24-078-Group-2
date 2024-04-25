@@ -2,7 +2,6 @@ import pandas as pd
 import arrow
 import requests 
 
-print("this shit is running bro")
 
 flights = pd.read_csv("./data/Full_Departures_Data.csv")
 weather = pd.read_csv("./data/Enterprise-II-YUL-Full-Weather.csv")
@@ -29,7 +28,7 @@ flights_and_weather = flights.merge(weather, how = "left", left_on = "Scheduled 
 # flights_and_weather.to_csv("/app/output/Enterprise-II-YUL-Flights-Weather-Merged.csv", index = False)
 
 json_data = flights_and_weather.to_json(orient = "records")
-base_url: str = "http://server_cond:80/items/1"
+base_url: str = "http://server_con:80/items/1"
 
 response = requests.put(base_url, json = json_data)
 
@@ -38,5 +37,3 @@ if response.status_code == 200:
     print("DataFrame sent successfully.")
 else:
     print("Error:", response.text)
-
-print("yo this is done running")
