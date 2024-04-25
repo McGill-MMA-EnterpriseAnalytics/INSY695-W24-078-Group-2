@@ -1,5 +1,5 @@
-./Kafka/enterprise-project/
-./docker-experiment/backup-files-dont-commit/
+Kafka/enterprise-project/
+docker-experiment/backup-files-dont-commit/
 mlruns/ 
 causal-inference/trained_models.pkl
 causal-inference/optuna_best_models.pkl
