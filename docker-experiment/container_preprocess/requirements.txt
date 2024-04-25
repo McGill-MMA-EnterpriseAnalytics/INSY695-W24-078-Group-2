@@ -1,0 +1,5 @@
+python==3.10.9
+pandas==1.5.2
+numpy==1.23.5
+scikit-learn==1.2.0
+requests==2.31.0
