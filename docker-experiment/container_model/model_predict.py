@@ -24,7 +24,7 @@ response = requests.put(base_url, json = json_data)
 
 # Check the response
 if response.status_code == 200:
-    print("DataFrame sent successfully.")
+    print("Results DataFrame sent successfully to Key 3.")
 else:
     print("Error:", response.text)
 
