@@ -15,5 +15,5 @@ EXPOSE 80
 COPY . .
 
 # commands to be run upon container initialization
-CMD ["python","merge-weather-flights.py"]
+CMD ["python","merge_weather_flights.py"]
 
