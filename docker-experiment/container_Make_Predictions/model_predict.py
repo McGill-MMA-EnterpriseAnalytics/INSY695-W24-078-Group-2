@@ -6,11 +6,18 @@ from sklearn.svm import SVR
 import xgboost as xgb
 import joblib
 import requests
+import json
 
 #load model
 ensemble = joblib.load('ensemble_model.pkl')
 
-to_predict = pd.read_csv('processed_dataset_YUL-Flights-Weather.csv').iloc[0:10]
+#load data
+base_url: str = "http://server_con:80/items/2"
+response = requests.get(base_url)
+dataset = json.loads(response.text)
+to_predict = pd.read_json(dataset)[0:10]
+
+#to_predict = pd.read_csv('processed_dataset_YUL-Flights-Weather.csv').iloc[0:10]
 to_predict = to_predict.drop('Departure Delay (min)', axis=1)
 
 # Predict

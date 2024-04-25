@@ -15,5 +15,5 @@ EXPOSE 80
 COPY . .
 
 # Run the script when the container launches
-CMD ["python","model_training.py"]
+CMD ["python","model_predict.py"]
 
