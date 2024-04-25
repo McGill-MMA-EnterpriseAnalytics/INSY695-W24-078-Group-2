@@ -1,19 +1,19 @@
-# Use an official Python runtime as a parent image
+# Using the official Python runtime image
 FROM python:3.11.8-slim
 
-# Set the working directory in the container
+# Setting up within-container working directory
 WORKDIR /app
-# Copy the current directory contents into the container at /usr/src/app
+# Copying whatever is in the current directory contents into the container at /usr/src/app
 COPY . /app
 
-# Install any needed packages specified in requirements.txt
+# Package installation via pip using the requirements.txt file
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Make port 80 available to the world outside this container
+# Making port 80 the visible one for external communication
 EXPOSE 80
 
 COPY . .
 
-# Run the script when the container launches
+# commands to be run upon container initialization
 CMD ["python","merge-weather-flights.py"]
 
