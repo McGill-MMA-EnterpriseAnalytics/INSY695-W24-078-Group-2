@@ -1,19 +1,19 @@
-# Use an official Python runtime as a parent image
+# Using the official Python Docker Image
 FROM python:3.11.8-slim
 
-# Set the working directory in the container
+# Setting up working directory within the created container
 WORKDIR /app
 # Copy the current directory contents into the container at /usr/src/app
 COPY . /app
 
-# Install any needed packages specified in requirements.txt
+# Package installation via pip from requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Make port 80 available to the world outside this container
+# Making port 80 available to the world outside this container for external comms
 EXPOSE 80
 
 COPY . .
 
-# Run the script when the container launches
+# Instructions upon running the container
 CMD ["uvicorn", "main-server:app", "--host", "0.0.0.0", "--port", "80"]
 
