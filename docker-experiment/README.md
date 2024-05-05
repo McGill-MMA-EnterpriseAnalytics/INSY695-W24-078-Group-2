@@ -15,3 +15,4 @@ How does it work?
 
 - All of these microservices are orchestrated using a docker compose file in the docker-experiment/ folder.
 - There is a custom polling mechanism code that is written in the server source code - this ensures that each microservice waits to receive the finished output from its upstream dependencies before attempting to run its application code.
+- In order to run this code, please pull this folder to your computer and just run ```docker-compose up``` after cd-ing into this folder. 
