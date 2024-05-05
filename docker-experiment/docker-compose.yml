@@ -1,0 +1,41 @@
+version: '3.8'
+services:
+  server:
+    container_name: server_con
+    build: ./container_server
+    ports:
+      - "8080:80"
+    volumes:
+      - type: bind
+        source: ./data-from-docker
+        target: /app/data
+
+  ingestion:
+    container_name: ingestion_container
+    build: ./container_ingestion
+    depends_on:
+      - server
+    volumes:
+      - type: bind
+        source: ./data-from-docker
+        target: /app/output
+
+  preprocessing:
+    container_name: preprocessing_container
+    build: ./container_preprocess
+    depends_on:
+      - ingestion
+    volumes:
+      - type: bind
+        source: ./data-from-docker
+        target: /app/output
+
+  modeling:
+    container_name: modeling_container
+    build: ./container_model
+    depends_on:
+      - preprocessing
+    volumes:
+      - type: bind
+        source: ./data-from-docker
+        target: /app/output
