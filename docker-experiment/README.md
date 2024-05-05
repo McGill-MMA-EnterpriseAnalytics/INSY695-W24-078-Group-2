@@ -7,10 +7,11 @@ The container setup is as follows:
 - A preprocessing container that handles the necessary data pre-processing tasks.
     - This container makes a GET request to the FastAPI server, receiving the ingestion output.
     - It performs the necessary pre-processing tasks, and pushes the output back to the server with a POST request.
-- Two modeling containers.
+- A modeling container that trains the data.
+    - This container pulls the data from the FastAPI server through a GET request.
+    - This container then makes predictions which is then transferred back to the FastAPI server with a POST request.
 
 How does it work?
 
-- All of these docker containers are on a shared network to handle inter-container communication.
-- All of these containers are also linked to a shared volume which enables the outputs to be written to a local folder for reasons of replicating data for redundancy/replication sake.
-- Apart from the server container, there is a yaml file utilizing docker compose to orchestrate the sequential trigger which runs all the containers in order.
+- All of these microservices are orchestrated using a docker compose file in the docker-experiment/ folder.
+- There is a custom polling mechanism code that is written in the server source code - this ensures that each microservice waits to receive the finished output from its upstream dependencies before attempting to run its application code.
