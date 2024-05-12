@@ -12,7 +12,7 @@ import arrow
 # For information relating to the API, please refer: https://aviationstack.com/documentation
 
 base_url: str = "https://api.aviationstack.com/v1/flights"
-api_key: str = "d2a6e0d7da1d79dd85f9c617082d2d56"
+api_key: str = "*****************************"
 
 # Setting up dates using arrow to pull last 90 days of data
 # 90 days chosen since this is the maximum lookback window permitted by the aviationstack API

@@ -37,7 +37,7 @@ if __name__ == '__main__':
 
     base_url: str = "https://api.aviationstack.com/v1/flights"
 
-    api_key: str = "d2a6e0d7da1d79dd85f9c617082d2d56"
+    api_key: str = "**********************"
 
     # 2. Testing API Response - Historical Flights Endpoint
 

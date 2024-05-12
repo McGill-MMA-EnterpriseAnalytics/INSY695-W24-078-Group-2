@@ -14,7 +14,7 @@ import arrow
 # For more information on the API, please refer:
 # https://openweathermap.org/api
 base_url: str = "https://history.openweathermap.org/data/2.5/history/city"
-api_key: str = "8eff9bb75e22ae972cb3954d01acfccb"
+api_key: str = "************************"
 
 # Setting up date objects using arrow
 # uppercased variables are constants
